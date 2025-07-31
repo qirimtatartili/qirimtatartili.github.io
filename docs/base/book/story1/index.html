@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
   <title>
-   Перечень разделов
+   Глава 1
   </title>
   <link href="/data/resources/favicon.svg" rel="icon"/>
-  <link href="../static/style/_reset.css" rel="stylesheet"/>
-  <link href="../static/style/_base.css" rel="stylesheet"/>
-  <script src="../static/script/utilCSS.js">
+  <link href="../../../static/style/_reset.css" rel="stylesheet"/>
+  <link href="../../../static/style/_base.css" rel="stylesheet"/>
+  <script src="../../../static/script/utilCSS.js">
   </script>
-  <script src="../static/script/hide_show.js">
+  <script src="../../../static/script/hide_show.js">
   </script>
  </head>
  <body>
@@ -28,15 +28,15 @@
       </div>
       <div class="button" data-state="flex" id="page-breadcrumbs-button" onclick="hide_show_by_class('page-breadcrumbs', 'page-breadcrumbs-button');">
       </div>
-      <script src="../static/script/filter_lang.js">
+      <script src="../../../static/script/filter_lang.js">
       </script>
       <div class="button" data-state="none" id="filter-lang-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button');">
       </div>
-      <script src="../static/script/filter_text.js">
+      <script src="../../../static/script/filter_text.js">
       </script>
       <div class="button" data-state="none" id="filter-text-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button');">
       </div>
-      <script src="../static/script/anchor.js">
+      <script src="../../../static/script/anchor.js">
       </script>
       <div class="button" data-state="none" id="page-content-anchor" onclick="hide_show_by_class('content-anchor-block', 'page-content-anchor'); anchor_cleanup(); ">
       </div>
@@ -55,8 +55,20 @@
       <div class="slash">
        /
       </div>
-      <div class="button-pseudo">
+      <a class="button" href="/base/index">
        Перечень разделов
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/base/book/index">
+       Книги
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <div class="button-pseudo">
+       Глава 1
       </div>
       <div class="infinity-spacer">
       </div>
@@ -64,29 +76,11 @@
     </nav>
     <div class="page-line-block" id="filter-lang-block" style="display: none;">
      <div class="page-line-content">
-      <div data-lang-cheked="5" data-lang-count="5" id="filter-langs">
-       <div class="filter-lang">
-        <label>
-         <input checked="" data-state="flex" id="input-checkbox-qtk" name="input-name-qtk" onclick="filter_lang_handler('qtk');" type="checkbox"/>
-         Къырымтатар тили
-        </label>
-       </div>
-       <div class="filter-lang">
-        <label>
-         <input checked="" data-state="flex" id="input-checkbox-qtl" name="input-name-qtl" onclick="filter_lang_handler('qtl');" type="checkbox"/>
-         Qırımtatar tili
-        </label>
-       </div>
+      <div data-lang-cheked="2" data-lang-count="2" id="filter-langs">
        <div class="filter-lang">
         <label>
          <input checked="" data-state="flex" id="input-checkbox-rus" name="input-name-rus" onclick="filter_lang_handler('rus');" type="checkbox"/>
          Русский язык
-        </label>
-       </div>
-       <div class="filter-lang">
-        <label>
-         <input checked="" data-state="flex" id="input-checkbox-ukr" name="input-name-ukr" onclick="filter_lang_handler('ukr');" type="checkbox"/>
-         Українська мова
         </label>
        </div>
        <div class="filter-lang">
@@ -119,47 +113,20 @@
     <article>
      <header class="content-base" id="section_0">
       <div class="content-main">
-       <div class="main-content-single" lang="qtk" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           Бёлюмлернинъ джедвели
-          </p>
-         </div>
-        </div>
-       </div>
-       <div class="main-content-single" lang="qtl" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           Bölümlerniñ cedveli
-          </p>
-         </div>
-        </div>
-       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-title">
+         <div class="text-text">
           <p>
-           Перечень разделов
-          </p>
-         </div>
-        </div>
-       </div>
-       <div class="main-content-single" lang="ukr" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           Перелік розділів
+           Глава 1
           </p>
          </div>
         </div>
        </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-title">
+         <div class="text-text">
           <p>
-           List of sections
+           Сhapter 1
           </p>
          </div>
         </div>
@@ -178,31 +145,21 @@
      </header>
      <section class="content-base" id="section_1">
       <div class="content-main">
-       <div class="main-content-single" lang="qtk" style="display: flex;">
-       </div>
-       <div class="main-content-single" lang="qtl" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/info/">
-           <p>
-            Информация
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           Один доллар и восемьдесят семь центов! И это все! Из них шестьдесят центов -- по одному пенни. Она выторговывала их по одному, по два пенни у бакалейщика, зеленщика и мясника, и у нее до сих пор щеки горели при одном воспоминании о том, как она торговалась. Господи, какого мнения были о ней, какой жадной и скупой считали ее все эти торговцы!
+          </p>
          </div>
         </div>
        </div>
-       <div class="main-content-single" lang="ukr" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/info/">
-           <p>
-            Information
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           One dollar and eighty-seven cents. That was all. And sixty cents of it was in pennies. Pennies saved one and two at a time by bulldozing the grocer and the vegetable man and the butcher until one’s cheeks burned with the silent imputation of parsimony that such close dealing implied.
+          </p>
          </div>
         </div>
        </div>
@@ -220,31 +177,21 @@
      </section>
      <section class="content-base" id="section_2">
       <div class="content-main">
-       <div class="main-content-single" lang="qtk" style="display: flex;">
-       </div>
-       <div class="main-content-single" lang="qtl" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/coll/">
-           <p>
-            Материалы
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           Делла трижды пересчитала деньги. Один доллар и восемьдесят семь центов. А завтра -- Рождество!
+          </p>
          </div>
         </div>
        </div>
-       <div class="main-content-single" lang="ukr" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/coll/">
-           <p>
-            Materials
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           Three times Della counted it. One dollar and eighty-seven cents. And the next day would be Christmas.
+          </p>
          </div>
         </div>
        </div>
@@ -262,31 +209,21 @@
      </section>
      <section class="content-base" id="section_3">
       <div class="content-main">
-       <div class="main-content-single" lang="qtk" style="display: flex;">
-       </div>
-       <div class="main-content-single" lang="qtl" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/dict/">
-           <p>
-            Словари
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           Ясное дело, что ничего другого не оставалось, как хлопнуться на маленькую потертую кушетку и реветь. Делла так и сделала, из чего легко можно вывести заключение, что вся наша жизнь состоит из слез, жалоб и улыбок, -- с перевесом в сторону слез.
+          </p>
          </div>
         </div>
        </div>
-       <div class="main-content-single" lang="ukr" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/dict/">
-           <p>
-            Dictionaries
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           There was clearly nothing to do but flop down on the shabby little couch and howl. So Della did it. Which instigates the moral reflection that life is made up of sobs, sniffles, and smiles, with sniffles predominating.
+          </p>
          </div>
         </div>
        </div>
@@ -304,31 +241,21 @@
      </section>
      <section class="content-base" id="section_4">
       <div class="content-main">
-       <div class="main-content-single" lang="qtk" style="display: flex;">
-       </div>
-       <div class="main-content-single" lang="qtl" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/book/">
-           <p>
-            Книги
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           В то время как хозяйка будет переходить от одного душевного состояния к другому, мы успеем бросить беглый взгляд на квартиру. Это меблированная квартирка, за которую платят восемь долларов в неделю. Нищенская квартира -- вот первое впечатление и самое точное определение.
+          </p>
          </div>
         </div>
        </div>
-       <div class="main-content-single" lang="ukr" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/book/">
-           <p>
-            Books
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           While the mistress of the home is gradually subsiding from the first stage to the second, take a look at the home. A furnished flat at $8 per week. It did not exactly beggar description, but it certainly had that word on the lookout for the mendicancy squad.
+          </p>
          </div>
         </div>
        </div>
@@ -346,31 +273,21 @@
      </section>
      <section class="content-base" id="section_5">
       <div class="content-main">
-       <div class="main-content-single" lang="qtk" style="display: flex;">
-       </div>
-       <div class="main-content-single" lang="qtl" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/util/">
-           <p>
-            Утилиты
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           В вестибюле, внизу, висит ящик для писем, куда никогда в жизни не пройдет ни единое письмо. Там же находится электрический звонок, из которого ни единый смертный не выжмет ни малейшего звука. В тех же местах можно увидеть визитную карточку: "М-р Джеймс Диллингхем Юнг". Во времена давно прошедшие и прекрасные, когда хозяин дома зарабатывал тридцать долларов в неделю, буквы "Диллингхем" имели чрезвычайно заносчивый вид. Но в настоящее время, когда доходы упали до жалкой цифры в двадцать долларов в неделю, эти буквы как будто бы потускнели и словно задумались над очень важной проблемой: "А не уменьшиться ли им всем до скромного и незначительного "Д"?"
+          </p>
          </div>
         </div>
        </div>
-       <div class="main-content-single" lang="ukr" style="display: flex;">
-       </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-button">
-          <a href="/base/util/">
-           <p>
-            Utility
-           </p>
-          </a>
+         <div class="text-text">
+          <p>
+           In the vestibule below was a letter-box into which no letter would go, and an electric button from which no mortal finger could coax a ring. Also appertaining thereunto was a card bearing the name “Mr. James Dillingham Young.” The “Dillingham” had been flung to the breeze during a former period of prosperity when its possessor was being paid $30 per week. Now, when the income was shrunk to $20, the letters of “Dillingham” looked blurred, as though they were thinking seriously of contracting to a modest and unassuming D. But whenever Mr. James Dillingham Young came home and reached his flat above he was called “Jim” and greatly hugged by Mrs. James Dillingham Young, already introduced to you as Della. Which is all very good.
+          </p>
          </div>
         </div>
        </div>
@@ -378,6 +295,24 @@
       <div class="content-anchor-block" style="display: none">
        <div class="content-anchor">
         <a href="#section_5" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_6">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_6" onclick="anchor_handler(this)">
          <div class="content-anchor-background">
           <div class="content-anchor-icon">
           </div>
