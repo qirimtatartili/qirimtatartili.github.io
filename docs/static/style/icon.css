@@ -1,0 +1,138 @@
+.button-void {
+    content: url(./../assets/icon/void.svg);
+}
+
+.slash {
+    content: url(./../assets/icon/slash.svg);
+}
+
+.content-anchor-icon {
+    content: url(./../assets/icon/anchor.svg);
+}
+#page-content-anchor {
+    content: url(./../assets/icon/anchor-circle.svg);
+}
+
+#remove-button {
+    content: url(./../assets/icon/delete.svg);
+}
+
+#close-button {
+    content: url(./../assets/icon/x-circle.svg);
+}
+
+/* Left */
+#logo-button {
+    content: url("/data/resources/home.svg");
+}
+
+#prev-button {
+    content: url(./../assets/icon/chevron-left.svg);
+}
+
+/* Right */
+/* Lang */
+#filter-lang-button {
+    content: url(./../assets/icon/layers.svg);
+}
+
+/* Page */
+#page-setting-button {
+    content: url(./../assets/icon/settings.svg);
+}
+
+#font_zoom_up-button {
+    content: url(./../assets/icon/zoom-in.svg);
+}
+
+#font_zoom_dn-button {
+    content: url(./../assets/icon/zoom-out.svg);
+}
+
+#font_change-button {
+    content: url(./../assets/icon/type.svg);
+}
+
+#toggle_theme_dark-button {
+    content: url(./../assets/icon/moon.svg);
+}
+
+#toggle_theme_light-button {
+    content: url(./../assets/icon/sun.svg);
+}
+
+#page-breadcrumbs-button {
+    content: url(./../assets/icon/map.svg);
+}
+
+#toggle_bread_on-button {
+    content: url(./../assets/icon/navigation.svg);
+}
+
+#toggle_bread_off-button {
+    content: url(./../assets/icon/navigation-2.svg);
+}
+
+#copy-button {
+    content: url(./../assets/icon/copy.svg);
+}
+
+/**/
+#filter-text-button {
+    content: url(./../assets/icon/filter.svg);
+}
+
+#filter-clear-button {
+
+    content: url(./../assets/icon/delete.svg);
+}
+
+
+
+
+
+.lang_move_button {
+    content: url(./../assets/icon/hmove.svg);
+}
+
+#filter-button {
+    content: url(./../assets/icon/crosshair.svg);
+}
+
+
+#github-button {
+    content: url(./../assets/icon/github.svg);
+}
+
+#info-button {
+    content: url(./../assets/icon/info.svg);
+}
+
+/* Page Nav Article*/
+#page-scroll-top {
+    content: url(./../assets/icon/arrow-up-circle.svg);
+}
+
+#page-scroll-bot {
+    content: url(./../assets/icon/arrow-down-circle.svg);
+}
+
+#page-navigate-button {
+    content: url(./../assets/icon/compass.svg);
+}
+
+#prev-chap-button {
+    content: url(./../assets/icon/chevrons-left.svg);
+}
+
+#prev-page-button {
+    content: url(./../assets/icon/chevron-left.svg);
+}
+
+#next-page-button {
+    content: url(./../assets/icon/chevron-right.svg);
+}
+
+#next-chap-button {
+    content: url(./../assets/icon/chevrons-right.svg);
+}

@@ -1,0 +1,15 @@
+#page-footer-content{
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: space-between;
+}
+
+.card-footer {
+    padding: 2px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+#card-copyright {
+  text-align: center;
+}

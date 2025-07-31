@@ -1,0 +1,31 @@
+#filter-langs {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-lang {
+  margin: 5px;
+
+  input[type=checkbox] {
+    appearance: none;
+    opacity: 0;
+  }
+
+  label:has(input[type=checkbox]:checked) {
+    user-select:none;
+    padding-right: 5px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background: #dddddd;
+
+  }
+
+  label:has(input[type=checkbox]:not(:checked)) {
+    user-select:none;
+    padding-right: 5px;
+    border-radius: 2px;
+    color: #8b8b8b;
+    border: 1px solid #b4b4b4;
+    background: #d8d8d8;
+  }
+}

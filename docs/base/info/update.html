@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <title>
+   Журнал
+  </title>
+  <link href="/data/resources/favicon.svg" rel="icon"/>
+  <link href="../../static/style/_reset.css" rel="stylesheet"/>
+  <link href="../../static/style/_base.css" rel="stylesheet"/>
+  <script src="../../static/script/utilCSS.js">
+  </script>
+  <script src="../../static/script/hide_show.js">
+  </script>
+ </head>
+ <body>
+  <div id="container-page">
+   <div id="container-top">
+    <header class="page-line-block" id="page-menu">
+     <div class="page-line-content">
+      <a href="/">
+       <div class="button" id="logo-button">
+        Главная страница
+       </div>
+      </a>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button" data-state="flex" id="page-breadcrumbs-button" onclick="hide_show_by_class('page-breadcrumbs', 'page-breadcrumbs-button');">
+      </div>
+      <script src="../../static/script/filter_lang.js">
+      </script>
+      <div class="button" data-state="none" id="filter-lang-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button');">
+      </div>
+      <script src="../../static/script/filter_text.js">
+      </script>
+      <div class="button" data-state="none" id="filter-text-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button');">
+      </div>
+      <script src="../../static/script/anchor.js">
+      </script>
+      <div class="button" data-state="none" id="page-content-anchor" onclick="hide_show_by_class('content-anchor-block', 'page-content-anchor'); anchor_cleanup(); ">
+      </div>
+     </div>
+    </header>
+    <nav class="page-line-block page-breadcrumbs" id="page-breadcrumbs-top" style="display:flex;">
+     <div class="page-line-content">
+      <div class="fixed-spacer">
+      </div>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/index">
+       Главная
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/base/index">
+       Перечень разделов
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/base/info/index">
+       Информация
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <div class="button-pseudo">
+       Журнал
+      </div>
+      <div class="infinity-spacer">
+      </div>
+     </div>
+    </nav>
+    <div class="page-line-block" id="filter-lang-block" style="display: none;">
+     <div class="page-line-content">
+      <div data-lang-cheked="2" data-lang-count="2" id="filter-langs">
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-rus" name="input-name-rus" onclick="filter_lang_handler('rus');" type="checkbox"/>
+         Русский язык
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-eng" name="input-name-eng" onclick="filter_lang_handler('eng');" type="checkbox"/>
+         English language
+        </label>
+       </div>
+      </div>
+      <div class="infinity-spacer">
+      </div>
+     </div>
+    </div>
+    <div class="page-line-block" id="filter-text-block" style="display: none;">
+     <div class="page-line-content">
+      <div class="infinity-spacer">
+      </div>
+      <div class="button-void">
+      </div>
+      <div contenteditable="true" id="filter-search-line">
+      </div>
+      <div class="button" id="filter-clear-button">
+      </div>
+      <div class="infinity-spacer">
+      </div>
+     </div>
+    </div>
+   </div>
+   <main id="container-mid">
+    <article>
+     <header class="content-base" id="section_0">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Журнал
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Changelog
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_0" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </header>
+     <section class="content-base" id="section_1">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           2025.07.10 - Начата активная фаза разработки сайта
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           2025.07.10 - The active phase of website development has begun
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_1" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_2">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           2024.03.24 - Заложена основная идея и формат сайта
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           2024.03.24 - The basic idea and format of the website are laid down
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_2" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+    </article>
+   </main>
+   <div id="container-bot">
+    <footer class="page-line-block" id="page-footer" style="display: flex;">
+     <div class="page-line-content" id="page-footer-content">
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <title>
+   Все разделы сайта
+  </title>
+  <link href="/data/resources/favicon.svg" rel="icon"/>
+  <link href="../static/style/_reset.css" rel="stylesheet"/>
+  <link href="../static/style/_base.css" rel="stylesheet"/>
+  <script src="../static/script/utilCSS.js">
+  </script>
+  <script src="../static/script/hide_show.js">
+  </script>
+ </head>
+ <body>
+  <div id="container-page">
+   <div id="container-top">
+    <header class="page-line-block" id="page-menu">
+     <div class="page-line-content">
+      <a href="/">
+       <div class="button" id="logo-button">
+        Главная страница
+       </div>
+      </a>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button" data-state="flex" id="page-breadcrumbs-button" onclick="hide_show_by_class('page-breadcrumbs', 'page-breadcrumbs-button');">
+      </div>
+      <script src="../static/script/filter_lang.js">
+      </script>
+      <div class="button" data-state="flex" id="filter-lang-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button');">
+      </div>
+      <script src="../static/script/filter_text.js">
+      </script>
+      <div class="button" data-state="flex" id="filter-text-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button');">
+      </div>
+      <script src="../static/script/scroll.js">
+      </script>
+      <div class="button" data-state="flex" id="page-navigate-button" onclick="hide_show_by_class('page-navigate', 'page-navigate-button');">
+      </div>
+      <script src="../static/script/anchor.js">
+      </script>
+      <div class="button" data-state="flex" id="page-content-anchor" onclick="hide_show_by_class('content-anchor-block', 'page-content-anchor'); anchor_cleanup(); ">
+      </div>
+     </div>
+    </header>
+    <nav class="page-line-block page-breadcrumbs" id="page-breadcrumbs-top" style="display:flex;">
+     <div class="page-line-content">
+      <div class="fixed-spacer">
+      </div>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/index">
+       Главная
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/test/index">
+       Тестовая страница
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <div class="button-pseudo">
+       Все разделы сайта
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button" id="close-button" onclick="hide_show_by_id('page-breadcrumbs-top', 'page-breadcrumbs-button', 'none');">
+      </div>
+     </div>
+    </nav>
+    <div class="page-line-block" id="filter-lang-block" style="display: flex;">
+     <div class="page-line-content">
+      <div data-lang-cheked="2" data-lang-count="2" id="filter-langs">
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-rus" name="input-name-rus" onclick="filter_lang_handler('rus');" type="checkbox"/>
+         Русский язык
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-eng" name="input-name-eng" onclick="filter_lang_handler('eng');" type="checkbox"/>
+         English language
+        </label>
+       </div>
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button close-button" id="close-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button', 'none');">
+      </div>
+     </div>
+    </div>
+    <div class="page-line-block" id="filter-text-block" style="display: flex;">
+     <div class="page-line-content">
+      <div class="button-void">
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button-void">
+      </div>
+      <div contenteditable="true" id="filter-search-line">
+      </div>
+      <div class="button" id="filter-clear-button">
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button" id="close-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button', 'none');">
+      </div>
+     </div>
+    </div>
+    <nav class="page-line-block page-navigate" id="page-navigate-top" style="display:flex;">
+     <div class="page-line-content">
+      <div class="button" id="page-scroll-bot" onclick="scroll_to('bot');">
+      </div>
+      <div class="fixed-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="prev-chap-button">
+       </div>
+      </a>
+      <div class="fixed-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="prev-page-button">
+       </div>
+      </a>
+      <div class="infinity-spacer">
+      </div>
+      <div id="page-info">
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="next-page-button">
+       </div>
+      </a>
+      <div class="fixed-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="next-chap-button">
+       </div>
+      </a>
+      <div class="fixed-spacer">
+      </div>
+      <div class="button" id="close-button" onclick="hide_show_by_id('page-navigate-top', 'page-navigate-button', 'none');">
+      </div>
+     </div>
+    </nav>
+   </div>
+   <main id="container-mid">
+    <article>
+     <header class="content-base" id="section_0">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           Все разделы сайта
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           All sections of the site
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_0" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </header>
+     <section class="content-base" id="section_1">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/test_not_found">
+           <p>
+            Не найдено [404]
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/test_not_found">
+           <p>
+            Not Found [404]
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_1" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_2">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/test/">
+           <p>
+            Тестовая страница
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_2" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_3">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/">
+           <p>
+            Главная
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/">
+           <p>
+            Main
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_3" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_4">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/">
+           <p>
+            Перечень разделов
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/">
+           <p>
+            List of sections
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_4" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_5">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/">
+           <p>
+            Информация
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/">
+           <p>
+            Information
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_5" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_6">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/about">
+           <p>
+            О сайте
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/about">
+           <p>
+            About
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_6" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_7">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/support">
+           <p>
+            Поддержка
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/support">
+           <p>
+            Support
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_7" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_8">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/update">
+           <p>
+            Журнал
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/update">
+           <p>
+            Changelog
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_8" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_9">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/dict/">
+           <p>
+            Словари
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/dict/">
+           <p>
+            Dictionaries
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_9" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_10">
+      <div class="content-main">
+       <div class="main-content-generic">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: flex">
+       <div class="content-anchor">
+        <a href="#section_10" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+    </article>
+   </main>
+   <div id="container-bot">
+    <nav class="page-line-block page-navigate" id="page-navigate-bot" style="display:flex;">
+     <div class="page-line-content">
+      <div class="button" id="page-scroll-top" onclick="scroll_to('top');">
+      </div>
+      <div class="fixed-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="prev-chap-button">
+       </div>
+      </a>
+      <div class="fixed-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="prev-page-button">
+       </div>
+      </a>
+      <div class="infinity-spacer">
+      </div>
+      <div id="page-info">
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="next-page-button">
+       </div>
+      </a>
+      <div class="fixed-spacer">
+      </div>
+      <a href=".">
+       <div class="button" id="next-chap-button">
+       </div>
+      </a>
+      <div class="fixed-spacer">
+      </div>
+      <div class="button" id="close-button" onclick="hide_show_by_id('page-navigate-bot', 'page-navigate-button', 'none');">
+      </div>
+     </div>
+    </nav>
+    <nav class="page-line-block page-breadcrumbs" id="page-breadcrumbs-bot" style="display:flex;">
+     <div class="page-line-content">
+      <div class="fixed-spacer">
+      </div>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/index">
+       Главная
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/test/index">
+       Тестовая страница
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <div class="button-pseudo">
+       Все разделы сайта
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button" id="close-button" onclick="hide_show_by_id('page-breadcrumbs-bot', 'page-breadcrumbs-button', 'none');">
+      </div>
+     </div>
+    </nav>
+    <footer class="page-line-block" id="page-footer" style="display: flex;">
+     <div class="page-line-content" id="page-footer-content">
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

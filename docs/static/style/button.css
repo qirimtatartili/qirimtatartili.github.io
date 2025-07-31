@@ -1,0 +1,22 @@
+/* Стиль кнопок */
+.button {
+  padding: 1px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+/* Стиль как у кнопки, но не кнопка*/
+.button-pseudo {
+  padding: 1px;
+  margin: 4px;
+}
+
+/* Кнопка-заполнитель, для симетрии */
+.button-void {
+  padding: 1px;
+  margin: 4px;
+}
+
+.close-button{
+   align-self:flex-start;
+}

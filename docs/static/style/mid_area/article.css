@@ -1,0 +1,219 @@
+article {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    /* ========================================================================================================= */
+
+    a > p {
+        border-bottom: 1px solid;
+    }
+    a:hover > p {
+        border-bottom: 1px dashed;
+    }
+    /* ========================================================================================================= */
+
+    header {
+        [lang] {
+            filter: saturate(200%);
+        }
+    }
+
+    .main-content-single,
+    .main-content-generic {
+        :lang(rus) {
+            /* background: #ffd5d5; */
+        }
+
+        :lang(eng) {
+            /* background: #d6fdbc; */
+        }
+
+        :lang(chn) {
+            /* background: #b1d0ff; */
+        }
+
+        :lang(ukr) {
+            /* background: #ffcdff; */
+        }
+
+        :lang(generic) {
+            align-items: center;
+            /* background: #f6d2ff; */
+        }
+
+        [type="source"] {
+            align-items: center;
+            /* background-color: rgb(255, 255, 187); */
+        }
+
+        [type="image"] {
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(193, 252, 222); */
+        }
+
+        .annotation-generic-none {
+            background-color: transparent;
+        }
+
+        .annotation-single-main {
+            background-color: transparent;
+        }
+    }
+
+    /* ========================================================================================================= */
+
+    .content-base {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        flex-direction: row;
+
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        margin-left: 2px;
+
+        background: #d8d8d8;
+        border-radius: 2px;
+    }
+
+    .content-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-direction: row;
+    }
+
+    /* ========================================================================================================= */
+
+    .main-content-single {
+        display: flex;
+        flex-direction: column;
+
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-shrink: 0;
+    }
+
+    .content-single {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        margin: 2px;
+        padding: 2px;
+
+        min-width: var(--subsection-single-width-min);
+        max-width: var(--subsection-single-width-max);
+
+        border-radius: 3px;
+        background: white;
+        /* border: 1px solid #000; */
+    }
+
+    .annotation-single {
+        margin-top: auto;
+
+        margin: 2px;
+        padding: 2px;
+
+        border-radius: 3px;
+        background: white;
+        /* border: 1px dotted #000; */
+
+        align-self: end;
+        text-align: end;
+        font-size: 60%;
+        color: grey;
+    }
+
+    /* ========================================================================================================= */
+
+    .main-content-generic {
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-shrink: 0;
+    }
+
+    .content-generic {
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-shrink: 0;
+
+        margin: 2px;
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-width: var(--subsection-generic-width-min);
+        max-width: var(--subsection-generic-width-max);
+
+        border-radius: 3px;
+        background: white;
+        /* border: 1px solid #000; */
+    }
+
+    .annotation-generic-main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .annotation-generic {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        margin: 2px;
+        padding: 2px;
+
+        justify-content: flex-end;
+        align-self: end;
+        text-align: end;
+        font-size: 60%;
+        color: grey;
+    }
+
+    .annotation-generic-lang {
+        border-radius: 3px;
+        background: white;
+        /* border: 1px dotted #000; */
+    }
+
+    .annotation-generic-none {
+        background-color: transparent;
+    }
+
+    /* ========================================================================================================= */
+
+    pre {
+        font-family: monospace;
+        tab-size: 4;
+    }
+
+    code {
+        white-space: pre;
+        font-family: monospace;
+    }
+
+    /* ========================================================================================================= */
+
+    .text-text {
+        flex-grow: 1;
+    }
+
+    .text-button {
+        text-align: center;
+        align-self: center;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .text-title {
+        align-self: center;
+        text-align: center;
+        flex-grow: 1;
+    }
+}

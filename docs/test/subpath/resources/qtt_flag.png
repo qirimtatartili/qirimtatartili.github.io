@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <title>
+   Ошибка 404
+  </title>
+  <link href="/data/resources/favicon.svg" rel="icon"/>
+  <link href="../../../static/style/_reset.css" rel="stylesheet"/>
+  <link href="../../../static/style/_base.css" rel="stylesheet"/>
+  <script src="../../../static/script/utilCSS.js">
+  </script>
+  <script src="../../../static/script/hide_show.js">
+  </script>
+ </head>
+ <body>
+  <div id="container-page">
+   <div id="container-top">
+    <header class="page-line-block" id="page-menu">
+     <div class="page-line-content">
+      <a href="/">
+       <div class="button" id="logo-button">
+        Главная страница
+       </div>
+      </a>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button" data-state="flex" id="page-breadcrumbs-button" onclick="hide_show_by_class('page-breadcrumbs', 'page-breadcrumbs-button');">
+      </div>
+     </div>
+    </header>
+    <nav class="page-line-block page-breadcrumbs" id="page-breadcrumbs-top" style="display:flex;">
+     <div class="page-line-content">
+      <div class="fixed-spacer">
+      </div>
+      <div class="slash">
+       /
+      </div>
+      <a class="button" href="/index">
+       Главная
+      </a>
+      <div class="slash">
+       /
+      </div>
+      <div class="button-pseudo">
+       Ошибка 404
+      </div>
+      <div class="infinity-spacer">
+      </div>
+     </div>
+    </nav>
+   </div>
+   <main id="container-mid">
+    <article>
+     <header class="content-base" id="section_0">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           Ошибка 404
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           Error 404
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </header>
+     <section class="content-base" id="section_1">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           Запрашиваемая страница не найдена
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           The requested page was not found
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_2">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Проверьте введеный адрес.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Check the entered address.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_3">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Или перейдите на одну из предложеных страниц:
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Or go to one of the suggested pages:
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_4">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/">
+           <p>
+            Главная страница
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/">
+           <p>
+            Main pages
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_5">
+      <div class="content-main">
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base">
+           <p>
+            Перечень разделов
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base">
+           <p>
+            List of sections
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+    </article>
+   </main>
+   <div id="container-bot">
+    <footer class="page-line-block" id="page-footer" style="display: flex;">
+     <div class="page-line-content" id="page-footer-content">
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

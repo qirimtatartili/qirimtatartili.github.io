@@ -1,0 +1,43 @@
+@import url("./mid_area/article.css");
+@import url("./mid_area/anchor.css");
+
+@import url("./out_area/filter_text.css");
+@import url("./out_area/filter_lang.css");
+@import url("./out_area/footer.css");
+
+.page-line-block {
+    min-width: 15rem;
+
+    border-radius: 2px;
+    background: var(--color-line-block);
+
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.page-line-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-grow: 1;
+
+    background: var(--color-line-content);
+    border-radius: 2px;
+}
+
+.fixed-spacer {
+    padding: 1px;
+    margin: 4px;
+}
+
+.infinity-spacer {
+    flex-grow: 1;
+}
