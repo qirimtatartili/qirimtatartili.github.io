@@ -106,6 +106,8 @@ article {
 
         margin: 2px;
         padding: 2px;
+        padding-left: 3px;
+        padding-right: 3px;
 
         min-width: var(--subsection-single-width-min);
         max-width: var(--subsection-single-width-max);
@@ -134,6 +136,9 @@ article {
     /* ========================================================================================================= */
 
     .main-content-generic {
+        display: flex;
+        flex-direction: column;
+
         flex-grow: 1;
         flex-basis: 0;
         flex-shrink: 0;
@@ -142,12 +147,11 @@ article {
     .content-generic {
         flex-grow: 1;
         flex-basis: 0;
-        flex-shrink: 0;
 
         margin: 2px;
         padding: 2px;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
 
         min-width: var(--subsection-generic-width-min);
         max-width: var(--subsection-generic-width-max);

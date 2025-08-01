@@ -16,7 +16,7 @@
   --subsection-generic-width-min: calc(var(--subsection-cell-width-min));
   --subsection-generic-width-max: calc(var(--subsection-cell-width-max) * 10);
 
-  --page-width-max: 1200px;
+  --page-width-max: 1250px;
   /* --------------------------------------------------------------------------------- */
 
   --color-boby: #8b8b8b;
@@ -26,7 +26,7 @@
   --color-anchor-block: var(--color-line-content);
   --color-anchor-content: var(--color-line-block);
   --color-anchor-content-accent: #ffaa2b;
-  
+
   /* --------------------------------------------------------------------------------- */
 
 }

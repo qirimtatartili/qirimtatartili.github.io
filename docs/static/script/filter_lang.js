@@ -69,9 +69,17 @@ function update_layout() {
     const emInPixels = parseFloat(getComputedStyle(root).fontSize);
 
     single_width_min = single_width_min * emInPixels;
+    var sum_single_width_max = single_width_min * get_all_langs().length * 0.8
     var sum_single_width_min = single_width_min * get_chd_langs().length
 
     show_lang();
+
+    if(sum_single_width_max < page_width){
+        changeCSSStyle('#filter-langs', 'flex-direction', 'row');
+    }else{
+        changeCSSStyle('#filter-langs', 'flex-direction', 'column');
+    }
+
     if (sum_single_width_min < page_width) {
         changeCSSStyle('.content-main', 'flex-direction', 'row');
         changeCSSStyle('.annotation-generic-none', 'display', 'flex');

@@ -4,14 +4,13 @@
   <meta charset="utf-8"/>
   <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
   <title>
-   О сайте
   </title>
   <link href="/data/resources/favicon.svg" rel="icon"/>
-  <link href="../../static/style/_reset.css" rel="stylesheet"/>
-  <link href="../../static/style/_base.css" rel="stylesheet"/>
-  <script src="../../static/script/utilCSS.js">
+  <link href="static/style/_reset.css" rel="stylesheet"/>
+  <link href="static/style/_base.css" rel="stylesheet"/>
+  <script src="static/script/utilCSS.js">
   </script>
-  <script src="../../static/script/hide_show.js">
+  <script src="static/script/hide_show.js">
   </script>
  </head>
  <body>
@@ -26,57 +25,15 @@
       </a>
       <div class="infinity-spacer">
       </div>
-      <div class="button" data-state="flex" id="page-breadcrumbs-button" onclick="hide_show_by_class('page-breadcrumbs', 'page-breadcrumbs-button');">
-      </div>
-      <script src="../../static/script/filter_lang.js">
+      <script src="static/script/filter_lang.js">
       </script>
       <div class="button" data-state="none" id="filter-lang-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button');">
       </div>
-      <script src="../../static/script/filter_text.js">
-      </script>
-      <div class="button" data-state="none" id="filter-text-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button');">
-      </div>
-      <script src="../../static/script/anchor.js">
-      </script>
-      <div class="button" data-state="none" id="page-content-anchor" onclick="hide_show_by_class('content-anchor-block', 'page-content-anchor'); anchor_cleanup(); ">
-      </div>
      </div>
     </header>
-    <nav class="page-line-block page-breadcrumbs" id="page-breadcrumbs-top" style="display:flex;">
-     <div class="page-line-content">
-      <div class="fixed-spacer">
-      </div>
-      <div class="slash">
-       /
-      </div>
-      <a class="button" href="/">
-       Главная
-      </a>
-      <div class="slash">
-       /
-      </div>
-      <a class="button" href="/base">
-       Перечень разделов
-      </a>
-      <div class="slash">
-       /
-      </div>
-      <a class="button" href="/base/info">
-       Информация
-      </a>
-      <div class="slash">
-       /
-      </div>
-      <div class="button-pseudo">
-       О сайте
-      </div>
-      <div class="infinity-spacer">
-      </div>
-     </div>
-    </nav>
     <div class="page-line-block" id="filter-lang-block" style="display: none;">
      <div class="page-line-content">
-      <div data-lang-cheked="6" data-lang-count="6" id="filter-langs">
+      <div data-lang-cheked="5" data-lang-count="5" id="filter-langs">
        <div class="filter-lang">
         <label>
          <input checked="" data-state="flex" id="input-checkbox-qtk" name="input-name-qtk" onclick="filter_lang_handler('qtk');" type="checkbox"/>
@@ -87,12 +44,6 @@
         <label>
          <input checked="" data-state="flex" id="input-checkbox-qtl" name="input-name-qtl" onclick="filter_lang_handler('qtl');" type="checkbox"/>
          Qırımtatar tili
-        </label>
-       </div>
-       <div class="filter-lang">
-        <label>
-         <input checked="" data-state="flex" id="input-checkbox-qta" name="input-name-qta" onclick="filter_lang_handler('qta');" type="checkbox"/>
-         قریم تاتار تیلی
         </label>
        </div>
        <div class="filter-lang">
@@ -118,88 +69,20 @@
       </div>
      </div>
     </div>
-    <div class="page-line-block" id="filter-text-block" style="display: none;">
-     <div class="page-line-content">
-      <div class="infinity-spacer">
-      </div>
-      <div class="button-void">
-      </div>
-      <div contenteditable="true" id="filter-search-line">
-      </div>
-      <div class="button" id="filter-clear-button">
-      </div>
-      <div class="infinity-spacer">
-      </div>
-     </div>
-    </div>
    </div>
    <main id="container-mid">
     <article>
      <header class="content-base" id="section_0">
       <div class="content-main">
        <div class="main-content-single" lang="qtk" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           Aкъкъында
-          </p>
-         </div>
-        </div>
        </div>
        <div class="main-content-single" lang="qtl" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           Aqqında
-          </p>
-         </div>
-        </div>
-       </div>
-       <div class="main-content-single" lang="qta" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           ققıند
-          </p>
-         </div>
-        </div>
        </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           О сайте
-          </p>
-         </div>
-        </div>
        </div>
        <div class="main-content-single" lang="ukr" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           Про сайт
-          </p>
-         </div>
-        </div>
        </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
-        <div class="content-single">
-         <div class="text-title">
-          <p>
-           About
-          </p>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="content-anchor-block" style="display: none">
-       <div class="content-anchor">
-        <a href="#section_0" onclick="anchor_handler(this)">
-         <div class="content-anchor-background">
-          <div class="content-anchor-icon">
-          </div>
-         </div>
-        </a>
        </div>
       </div>
      </header>
@@ -226,8 +109,6 @@
           </a>
          </div>
         </div>
-       </div>
-       <div class="main-content-single" lang="qta" style="display: flex;">
        </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
@@ -263,24 +144,12 @@
         </div>
        </div>
       </div>
-      <div class="content-anchor-block" style="display: none">
-       <div class="content-anchor">
-        <a href="#section_1" onclick="anchor_handler(this)">
-         <div class="content-anchor-background">
-          <div class="content-anchor-icon">
-          </div>
-         </div>
-        </a>
-       </div>
-      </div>
      </section>
      <section class="content-base" id="section_2">
       <div class="content-main">
        <div class="main-content-single" lang="qtk" style="display: flex;">
        </div>
        <div class="main-content-single" lang="qtl" style="display: flex;">
-       </div>
-       <div class="main-content-single" lang="qta" style="display: flex;">
        </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
        </div>
@@ -289,14 +158,77 @@
        <div class="main-content-single" lang="eng" style="display: flex;">
        </div>
       </div>
-      <div class="content-anchor-block" style="display: none">
-       <div class="content-anchor">
-        <a href="#section_2" onclick="anchor_handler(this)">
-         <div class="content-anchor-background">
-          <div class="content-anchor-icon">
-          </div>
+     </section>
+     <section class="content-base" id="section_3">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_4">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base">
+           <p>
+            Бёлюмлернинъ джедвели
+           </p>
+          </a>
          </div>
-        </a>
+        </div>
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base">
+           <p>
+            Bölümlerniñ cedveli
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base">
+           <p>
+            Перечень разделов
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base">
+           <p>
+            Перелік розділів
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base">
+           <p>
+            List of sections
+           </p>
+          </a>
+         </div>
+        </div>
        </div>
       </div>
      </section>

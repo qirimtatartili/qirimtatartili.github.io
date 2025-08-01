@@ -49,19 +49,19 @@
       <div class="slash">
        /
       </div>
-      <a class="button" href="/index">
+      <a class="button" href="/">
        Главная
       </a>
       <div class="slash">
        /
       </div>
-      <a class="button" href="/base/index">
+      <a class="button" href="/base">
        Перечень разделов
       </a>
       <div class="slash">
        /
       </div>
-      <a class="button" href="/base/info/index">
+      <a class="button" href="/base/info">
        Информация
       </a>
       <div class="slash">
@@ -76,11 +76,29 @@
     </nav>
     <div class="page-line-block" id="filter-lang-block" style="display: none;">
      <div class="page-line-content">
-      <div data-lang-cheked="2" data-lang-count="2" id="filter-langs">
+      <div data-lang-cheked="5" data-lang-count="5" id="filter-langs">
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-qtk" name="input-name-qtk" onclick="filter_lang_handler('qtk');" type="checkbox"/>
+         Къырымтатар тили
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-qtl" name="input-name-qtl" onclick="filter_lang_handler('qtl');" type="checkbox"/>
+         Qırımtatar tili
+        </label>
+       </div>
        <div class="filter-lang">
         <label>
          <input checked="" data-state="flex" id="input-checkbox-rus" name="input-name-rus" onclick="filter_lang_handler('rus');" type="checkbox"/>
          Русский язык
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-ukr" name="input-name-ukr" onclick="filter_lang_handler('ukr');" type="checkbox"/>
+         Українська мова
         </label>
        </div>
        <div class="filter-lang">
@@ -113,18 +131,45 @@
     <article>
      <header class="content-base" id="section_0">
       <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           Ярдым
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           Yardım
+          </p>
+         </div>
+        </div>
+       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-text">
+         <div class="text-title">
           <p>
            Поддержка
           </p>
          </div>
         </div>
        </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           Підтримка
+          </p>
+         </div>
+        </div>
+       </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-text">
+         <div class="text-title">
           <p>
            Support
           </p>
@@ -145,21 +190,58 @@
      </header>
      <section class="content-base" id="section_1">
       <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/pagestub">
+           <p>
+            Ишленген болюк
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/pagestub">
+           <p>
+            İşlenilgen bölük
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
        <div class="main-content-single" lang="rus" style="display: flex;">
         <div class="content-single">
-         <div class="text-text">
-          <p>
-           Информация
-          </p>
+         <div class="text-button">
+          <a href="/base/info/pagestub">
+           <p>
+            Раздел в разработке
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+        <div class="content-single">
+         <div class="text-button">
+          <a href="/base/info/pagestub">
+           <p>
+            Розділ у розробці
+           </p>
+          </a>
          </div>
         </div>
        </div>
        <div class="main-content-single" lang="eng" style="display: flex;">
         <div class="content-single">
-         <div class="text-text">
-          <p>
-           Info
-          </p>
+         <div class="text-button">
+          <a href="/base/info/pagestub">
+           <p>
+            Section under development
+           </p>
+          </a>
          </div>
         </div>
        </div>
@@ -167,6 +249,30 @@
       <div class="content-anchor-block" style="display: none">
        <div class="content-anchor">
         <a href="#section_1" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_2">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_2" onclick="anchor_handler(this)">
          <div class="content-anchor-background">
           <div class="content-anchor-icon">
           </div>
