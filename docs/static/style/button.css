@@ -1,14 +1,45 @@
 /* Стиль кнопок */
 .button {
+  cursor: pointer;
   padding: 1px;
   margin: 4px;
+}
+
+/* Стиль кнопок */
+.button-breadcrumbs {
   cursor: pointer;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Стиль кнопок */
+.button-breadcrumbs-pseudo {
+  cursor: pointer;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Стиль как у кнопки, но не кнопка*/
 .button-pseudo {
   padding: 1px;
-  margin: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Кнопка-заполнитель, для симетрии */
