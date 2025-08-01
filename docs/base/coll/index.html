@@ -264,7 +264,7 @@
    <div id="container-bot">
     <footer class="page-line-block" id="page-footer" style="display: flex;">
      <div class="page-line-content" id="page-footer-content">
-      <div>
+      <div class="footer-content-left">
        <div class="card-footer" id="card-license">
         <p>
          Site license:
@@ -279,7 +279,7 @@
         </p>
        </div>
       </div>
-      <div>
+      <div class="footer-content-mid">
        <div class="card-footer" id="card-copyright">
         <p>
          <a href="https://qirimtatartili.github.io">
@@ -291,20 +291,23 @@
         </p>
        </div>
       </div>
-      <div>
-       <div class="card-footer" id="card-update" style="font-family: monospace;">
-        <p>
-         Site update:
-         <span>
-          2025-08-01 17:10
-         </span>
-        </p>
+      <div class="footer-content-right">
+       <div class="card-footer" id="card-update">
         <p>
          Page update:
-         <span>
+         <span id="timeUpdatePage">
           2025-08-01 13:21
          </span>
         </p>
+        <p>
+         Site update:
+         <span id="timeUpdateSite">
+          <!-- { {content.timeUpdateSite} } -->
+          xxxx.xx.xx xx:xx
+         </span>
+        </p>
+        <script src="../../static/script/datetimecomit.js">
+        </script>
        </div>
       </div>
      </div>

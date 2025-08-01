@@ -1,15 +1,26 @@
-#page-footer-content{
+#page-footer-content {
   display: flex;
   flex: 1 0 auto;
+
   justify-content: space-between;
+  /* align-items: stretch; */
 }
 
 .card-footer {
-    padding: 2px;
-    margin: 2px;
-    border-radius: 3px;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 3px;
 }
 
 #card-copyright {
   text-align: center;
+}
+
+.footer-content-right {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-update {
+  font-family: monospace;
 }

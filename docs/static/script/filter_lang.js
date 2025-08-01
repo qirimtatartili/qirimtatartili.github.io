@@ -83,8 +83,6 @@ function filter_lang_cookies() {
         const name = keyValuePairs[i].substring(0, keyValuePairs[i].indexOf('=')).trim();
         const value = keyValuePairs[i].substring(keyValuePairs[i].indexOf('=') + 1).trim();
 
-        console.log(name, value);
-
         const lang = name.replace("lang_", "")
         element_lang = document.getElementById("input-checkbox-" + lang);
 
