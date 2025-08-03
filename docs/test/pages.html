@@ -40,37 +40,50 @@
       </script>
       <div class="button" data-state="flex" id="page-navigate-button" onclick="hide_show_by_class('page-navigate', 'page-navigate-button');">
       </div>
+      <a href="https://github.com/qirimtatartili/qirimtatartili.github.io" target="_blank">
+       <div class="button" id="github-button">
+        <p>
+         Страница проекта
+        </p>
+       </div>
+      </a>
       <script src="../static/script/anchor.js">
       </script>
       <div class="button" data-state="flex" id="page-content-anchor" onclick="hide_show_by_class('content-anchor-block', 'page-content-anchor'); anchor_cleanup(); ">
       </div>
      </div>
     </header>
-    <nav class="page-line-block page-breadcrumbs" id="page-breadcrumbs-top" style="display:flex;">
+    <nav class="page-line-block" id="page-breadcrumbs-top" style="display:flex;">
      <div class="page-line-content">
       <div class="fixed-spacer">
       </div>
-      <div class="slash">
-       /
-      </div>
-      <a class="button-breadcrumbs" href="/">
-       Главная
-      </a>
-      <div class="slash">
-       /
-      </div>
-      <a class="button-breadcrumbs" href="/test">
-       Тестовая страница
-      </a>
-      <div class="slash">
-       /
-      </div>
-      <div class="button-breadcrumbs-pseudo">
-       Все разделы сайта
+      <div class="page-breadcrumbs">
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/">
+        <span>
+         Главная
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/test">
+        <span>
+         Тестовая страница
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <span>
+        Все разделы сайта
+       </span>
       </div>
       <div class="infinity-spacer">
       </div>
-      <div class="button" id="close-button" onclick="hide_show_by_id('page-breadcrumbs-top', 'page-breadcrumbs-button', 'none');">
+      <div class="button close-button" onclick="hide_show_by_id('page-breadcrumbs-top', 'page-breadcrumbs-button', 'none');">
       </div>
      </div>
     </nav>
@@ -92,7 +105,7 @@
       </div>
       <div class="infinity-spacer">
       </div>
-      <div class="button close-button" id="close-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button', 'none');">
+      <div class="button close-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button', 'none');">
       </div>
      </div>
     </div>
@@ -110,7 +123,7 @@
       </div>
       <div class="infinity-spacer">
       </div>
-      <div class="button" id="close-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button', 'none');">
+      <div class="button close-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button', 'none');">
       </div>
      </div>
     </div>
@@ -148,7 +161,7 @@
       </a>
       <div class="fixed-spacer">
       </div>
-      <div class="button" id="close-button" onclick="hide_show_by_id('page-navigate-top', 'page-navigate-button', 'none');">
+      <div class="button close-button" onclick="hide_show_by_id('page-navigate-top', 'page-navigate-button', 'none');">
       </div>
      </div>
     </nav>
@@ -571,35 +584,41 @@
       </a>
       <div class="fixed-spacer">
       </div>
-      <div class="button" id="close-button" onclick="hide_show_by_id('page-navigate-bot', 'page-navigate-button', 'none');">
+      <div class="button close-button" onclick="hide_show_by_id('page-navigate-bot', 'page-navigate-button', 'none');">
       </div>
      </div>
     </nav>
-    <nav class="page-line-block page-breadcrumbs" id="page-breadcrumbs-bot" style="display:flex;">
+    <nav class="page-line-block" id="page-breadcrumbs-bot" style="display:flex;">
      <div class="page-line-content">
       <div class="fixed-spacer">
       </div>
-      <div class="slash">
-       /
-      </div>
-      <a class="button-breadcrumbs" href="/">
-       Главная
-      </a>
-      <div class="slash">
-       /
-      </div>
-      <a class="button-breadcrumbs" href="/test">
-       Тестовая страница
-      </a>
-      <div class="slash">
-       /
-      </div>
-      <div class="button-breadcrumbs-pseudo">
-       Все разделы сайта
+      <div class="page-breadcrumbs">
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/">
+        <span>
+         Главная
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/test">
+        <span>
+         Тестовая страница
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <span>
+        Все разделы сайта
+       </span>
       </div>
       <div class="infinity-spacer">
       </div>
-      <div class="button" id="close-button" onclick="hide_show_by_id('page-breadcrumbs-bot', 'page-breadcrumbs-button', 'none');">
+      <div class="button close-button" onclick="hide_show_by_id('page-breadcrumbs-bot', 'page-breadcrumbs-button', 'none');">
       </div>
      </div>
     </nav>
@@ -637,7 +656,7 @@
         <p>
          Page update:
          <span id="timeUpdatePage">
-          2025-08-01 11:27
+          2025-08-02 16:02
          </span>
         </p>
         <p>

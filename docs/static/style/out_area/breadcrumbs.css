@@ -1,0 +1,35 @@
+
+/* Стиль кнопок */
+.button-breadcrumbs {
+  cursor: pointer;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  a > span {
+        border-bottom: 1px solid;
+    }
+  a:hover > span {
+        border-bottom: 1px dashed;
+    }
+}
+
+/* Стиль кнопок */
+.button-breadcrumbs-pseudo {
+  cursor: pointer;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
+}

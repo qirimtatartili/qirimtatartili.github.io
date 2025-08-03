@@ -17,7 +17,7 @@
     content: url(./../assets/icon/delete.svg);
 }
 
-#close-button {
+.close-button {
     content: url(./../assets/icon/x-circle.svg);
 }
 
@@ -102,6 +102,7 @@
 
 #github-button {
     content: url(./../assets/icon/github.svg);
+    /* transform: scale(0.8); */
 }
 
 #info-button {

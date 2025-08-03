@@ -109,10 +109,12 @@ function update_layout() {
 
     show_lang();
 
-    if (sum_single_width_max < page_width) {
+    if (750 < page_width) {
         changeCSSStyle('#filter-langs', 'flex-direction', 'row');
+        changeCSSStyle('#page-footer-content', 'flex-direction', 'row');
     } else {
         changeCSSStyle('#filter-langs', 'flex-direction', 'column');
+        changeCSSStyle('#page-footer-content', 'flex-direction', 'column');
     }
 
     if (sum_single_width_min < page_width) {

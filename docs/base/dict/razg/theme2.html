@@ -1,0 +1,3402 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <title>
+  </title>
+  <link href="/data/resources/favicon.svg" rel="icon"/>
+  <link href="../../../static/style/_reset.css" rel="stylesheet"/>
+  <link href="../../../static/style/_base.css" rel="stylesheet"/>
+  <script src="../../../static/script/utilCSS.js">
+  </script>
+  <script src="../../../static/script/hide_show.js">
+  </script>
+ </head>
+ <body>
+  <div id="container-page">
+   <div id="container-top">
+    <header class="page-line-block" id="page-menu">
+     <div class="page-line-content">
+      <a href="/">
+       <div class="button" id="logo-button">
+        Главная страница
+       </div>
+      </a>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button" data-state="flex" id="page-breadcrumbs-button" onclick="hide_show_by_class('page-breadcrumbs', 'page-breadcrumbs-button');">
+      </div>
+      <script src="../../../static/script/filter_lang.js">
+      </script>
+      <div class="button" data-state="flex" id="filter-lang-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button');">
+      </div>
+      <script src="../../../static/script/filter_text.js">
+      </script>
+      <div class="button" data-state="none" id="filter-text-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button');">
+      </div>
+      <a href="https://github.com/qirimtatartili/qirimtatartili.github.io" target="_blank">
+       <div class="button" id="github-button">
+        <p>
+         Страница проекта
+        </p>
+       </div>
+      </a>
+      <script src="../../../static/script/anchor.js">
+      </script>
+      <div class="button" data-state="none" id="page-content-anchor" onclick="hide_show_by_class('content-anchor-block', 'page-content-anchor'); anchor_cleanup(); ">
+      </div>
+     </div>
+    </header>
+    <nav class="page-line-block" id="page-breadcrumbs-top" style="display:flex;">
+     <div class="page-line-content">
+      <div class="fixed-spacer">
+      </div>
+      <div class="page-breadcrumbs">
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/">
+        <span>
+         Главная
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/base">
+        <span>
+         Перечень разделов
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/base/dict">
+        <span>
+         Словари
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <a class="button-breadcrumbs" href="/base/dict/razg">
+        <span>
+         Разговорник
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <span>
+       </span>
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button close-button" onclick="hide_show_by_id('page-breadcrumbs-top', 'page-breadcrumbs-button', 'none');">
+      </div>
+     </div>
+    </nav>
+    <div class="page-line-block" id="filter-lang-block" style="display: flex;">
+     <div class="page-line-content">
+      <div data-lang-cheked="5" data-lang-count="5" id="filter-langs">
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-qtk" name="input-name-qtk" onclick="filter_lang_handler('qtk');" type="checkbox"/>
+         Къырымтатар тили
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-qtl" name="input-name-qtl" onclick="filter_lang_handler('qtl');" type="checkbox"/>
+         Qırımtatar tili
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-rus" name="input-name-rus" onclick="filter_lang_handler('rus');" type="checkbox"/>
+         Русский язык
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-ukr" name="input-name-ukr" onclick="filter_lang_handler('ukr');" type="checkbox"/>
+         Українська мова
+        </label>
+       </div>
+       <div class="filter-lang">
+        <label>
+         <input checked="" data-state="flex" id="input-checkbox-eng" name="input-name-eng" onclick="filter_lang_handler('eng');" type="checkbox"/>
+         English language
+        </label>
+       </div>
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button close-button" onclick="hide_show_by_id('filter-lang-block', 'filter-lang-button', 'none');">
+      </div>
+     </div>
+    </div>
+    <div class="page-line-block" id="filter-text-block" style="display: none;">
+     <div class="page-line-content">
+      <div class="button-void">
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button-void">
+      </div>
+      <div contenteditable="true" id="filter-search-line">
+      </div>
+      <div class="button" id="filter-clear-button">
+      </div>
+      <div class="infinity-spacer">
+      </div>
+      <div class="button close-button" onclick="hide_show_by_id('filter-text-block', 'filter-text-button', 'none');">
+      </div>
+     </div>
+    </div>
+   </div>
+   <main id="container-mid">
+    <article>
+     <header class="content-base" id="section_0">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-title">
+          <p>
+           DAVET ETÜV, RİCA, İSTEK
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_0" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </header>
+     <section class="content-base" id="section_1">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Buyurıñız, kiriñiz!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Входите (заходите), пожалуйста!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_1" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_2">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Keçiñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Проходите
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_2" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_3">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Yarın bizge keliñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Приходите завтра к нам
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_3" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_4">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Biz sizni musafirlikke davet etemiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Мы вас приглашаем в гости
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_4" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_5">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Stolğa buyurıñız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Пожалуйте к столу
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_5" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_6">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sofrağa buyurıñız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Пожалуйте к столу
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_6" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_7">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sağ ol!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Спасибо!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_7" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_8">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sağ oluñız!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Спасибо!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_8" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_9">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Çekinmeñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Не стесняйтесь
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_9" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_10">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Buyurıñız, bizge qoşulıñız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Присоединяйтесь, пожалуйста, к нам
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_10" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_11">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Mında keliñiz! (Bu yaqqa keliñiz!)
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Идите сюда
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_11" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_12">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sizni ...ğa (ge) davet eteler
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sizni ...ğa (ge) davet eteler
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_12" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_13">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men sizni oynamağa davet etem
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я вас приглашаю танцевать
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_13" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_14">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Bu aqşam beraber olayıq
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Проведём этот вечер вместе
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_14" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_15">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Yüriñiz biznen
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Пойдёмте с нами
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_15" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_16">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Aydıñız, deñizge barıp, taze avanen nefes alayıq
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Пойдёмте к морю подышать свежим воздухом
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_16" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_17">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Yüriñiz, kinoğa barayıq
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Давайте сходим в кино
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_17" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_18">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Yüriñiz, tükânğa barayıq
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Давайте сходим в магазин
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_18" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_19">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Yüriñiz, bazarğa barayıq
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Давайте сходим на базар
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_19" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_20">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sizni bir filcan qavege davet etem
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Приглашаю вас на чашку кофе
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_20" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_21">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sizni toyğa davet etem
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я приглашаю вас на свадьбу
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_21" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_22">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sizni doğğan künge davet etem
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я приглашаю вас на день рождения
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_22" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_23">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Siz davetname aldıñızmı?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Вы получили приглашение?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_23" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_24">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Ebet, aldım, diqqatıñız içün teşekkür (memnünim)
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Да, получил, тронут вашим вниманием (в ответ)
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_24" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_25">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Daa keliñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Приезжайте ещё
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_25" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_26">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Bizge de keliñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Приезжайте и к нам
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_26" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_27">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Kelecek yazda qorantañıznen keliñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Приезжайте семьёй следующим летом
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_27" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_28">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Kelecek yazda aileñiznen keliñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Приезжайте семьёй следующим летом
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_28" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_29">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Kelecek sene sizni özümizde bekleymiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Мы ждём вас к себе в будущем году
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_29" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_30">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Siz nasıl raatlanmaq isteysiñiz?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Как вы хотите отдыхать?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_30" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_31">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sizge qolaysız (oñaytsız) degilmi?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Удобно ли вам?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_31" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_32">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men raatlanmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу отдохнуть
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_32" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_33">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem..
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Прошу вас (тебя)…
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_33" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_34">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Ne isteysiñiz?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Что вы хотите?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_34" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_35">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу идти
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_35" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_36">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men oturmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу сесть
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_36" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_37">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men raatlanmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу отдохнуть
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_37" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_38">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men yuqlamaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу спать
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_38" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_39">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men aşamaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу есть
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_39" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_40">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men içmek isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пить
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_40" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_41">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Menim qarnım açtı
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я проголодался
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_41" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_42">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men açım
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я голодный
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_42" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_43">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men üşüdim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Мне холодно
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_43" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_44">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Maña sıcaq oldı
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Мне жарко
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_44" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_45">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Yuqum kele
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Спать хочется
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_45" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_46">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men kezinmek isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Мне хотелось бы прогуляться
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_46" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_47">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men bazarğa barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти на базар
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_47" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_48">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men kinoğa barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в кино
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_48" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_49">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men tükânğa barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в магазин
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_49" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_50">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men muzeyge barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в музей
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_50" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_51">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men teatrge barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в театр
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_51" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_52">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men ayvanat bağçasına barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в зоопарк
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_52" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_53">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men tsirkke barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в цирк
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_53" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_54">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men klubğa barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в клуб
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_54" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_55">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Men raatlıq bağçasına barmaq isteyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я хочу пойти в парк
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_55" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_56">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           ... maña yardım etseñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Помогите мне…
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_56" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_57">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Kösterip olamazsıñızmı?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Не смогли бы показать?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_57" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_58">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Sizni diñleyim
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я вас слушаю
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_58" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_59">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Siziñ hizmetiñizge azırım
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Я к вашим услугам
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_59" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_60">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Aytıñız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Скажите
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_60" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_61">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Asanov efendini körmek mümkünmi?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Можно ли видеть господина Асанова?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_61" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_62">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, Asanov efendeni mında Çağırsañız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Позовите, пожалуйста, господина Асанова
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_62" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_63">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, azaçıq bekleñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Подождите, пожалуйста, немного
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_63" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_64">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, biraz bekleñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Подождите, пожалуйста, немного
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_64" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_65">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Meni bekleñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Подождите меня
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_65" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_66">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Meni beklemeñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Меня не ждите
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_66" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_67">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Aşıqmañız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Не спешите
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_67" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_68">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, aşıqıñız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Поторопитесь, пожалуйста
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_68" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_69">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, çabik oluñız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Побыстрее, пожалуйста
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_69" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_70">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, tez oluñız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Побыстрее, пожалуйста
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_70" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_71">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, tekrarlasañız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Повторите, пожалуйста
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_71" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_72">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, unutmañız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Не забудьте, пожалуйста
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_72" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_73">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Unutmamaq içün
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Чтобы (как бы) не забыть
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_73" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_74">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, bu mektüpni yollasañız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Отправьте, пожалуйста, это письмо
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_74" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_75">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Kirmek mümkünmi? (Kirmege ruhset Etiñiz)
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Можно (разрешите) войти?
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_75" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_76">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, keçmege ruhset etseñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Разрешите, пожалуйста, пройти
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_76" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_77">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, qattıca laf etseñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Пожалуйста, говорите погромче
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_77" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_78">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, sakince laf etseñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Пожалуйста, говорите потише
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_78" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_79">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Rica etem, tafsilâtlıca ikâye etseñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Расскажите, пожалуйста, более подробно
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_79" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_80">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Zamet de olsa qapını açsañız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Откройте, пожалуйста, дверь
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_80" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_81">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Zamet de olsa pencereni açsañız
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Откройте, пожалуйста, окно
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_81" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_82">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Qapını örtseñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Закройте дверь
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_82" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <section class="content-base" id="section_83">
+      <div class="content-main">
+       <div class="main-content-single" lang="qtk" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="qtl" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Pencereni örtseñiz
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="rus" style="display: flex;">
+        <div class="content-single">
+         <div class="text-text">
+          <p>
+           Закройте окно
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="main-content-single" lang="ukr" style="display: flex;">
+       </div>
+       <div class="main-content-single" lang="eng" style="display: flex;">
+       </div>
+      </div>
+      <div class="content-anchor-block" style="display: none">
+       <div class="content-anchor">
+        <a href="#section_83" onclick="anchor_handler(this)">
+         <div class="content-anchor-background">
+          <div class="content-anchor-icon">
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+    </article>
+   </main>
+   <div id="container-bot">
+    <footer class="page-line-block" id="page-footer" style="display: flex;">
+     <div class="page-line-content" id="page-footer-content">
+      <div class="footer-content-left">
+       <div class="card-footer" id="card-license">
+        <p>
+         Site license:
+         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+          CC BY-NC-SA 4.0
+         </a>
+        </p>
+        <p style="font-size: smaller;">
+         does not apply to the provided materials,
+         <br/>
+         each case must be considered separately
+        </p>
+       </div>
+      </div>
+      <div class="footer-content-mid">
+       <div class="card-footer" id="card-copyright">
+        <p>
+         <a href="https://qirimtatartili.github.io">
+          QirimTatarTili.GitHub.io
+         </a>
+        </p>
+        <p>
+         2024-2025
+        </p>
+       </div>
+      </div>
+      <div class="footer-content-right">
+       <div class="card-footer" id="card-update">
+        <p>
+         Page update:
+         <span id="timeUpdatePage">
+          2025-08-02 16:02
+         </span>
+        </p>
+        <p>
+         Site update:
+         <span id="timeUpdateSite">
+          <!-- { {content.timeUpdateSite} } -->
+          xxxx.xx.xx xx:xx
+         </span>
+        </p>
+        <script src="../../../static/script/datetimecomit.js">
+        </script>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>
